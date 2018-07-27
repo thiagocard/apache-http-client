@@ -1,4 +1,5 @@
-import br.com.labbs.workout.httpclientbattle.shared.Env
+package br.com.pqp
+
 import br.com.labbs.workout.httpclientbattle.shared.HttpClient
 import org.apache.http.HttpResponse
 import org.apache.http.client.methods.HttpGet
@@ -23,7 +24,7 @@ class ApacheHttpClient() : HttpClient<HttpGet, HttpResponse, CloseableHttpClient
 
     companion object {
 
-        const val CLIENT_NAME = "ApacheHttpClient"
+        const val CLIENT_NAME = "br.com.pqp.ApacheHttpClient"
 
     }
 
