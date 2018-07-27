@@ -9,7 +9,7 @@ class ApacheHttpClient() : HttpClient<HttpGet, HttpResponse, CloseableHttpClient
 
     private var client: CloseableHttpClient = HttpClientBuilder.create().build()
 
-    override fun newRequest() = HttpGet(Env.URL_SERVER.get())
+    override fun newRequest(url: String?) = HttpGet(url)
 
     override fun execRequest(request: HttpGet?, number: Int) = client.execute(request)
 
