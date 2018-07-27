@@ -5,7 +5,6 @@ import org.apache.http.client.methods.HttpGet
 import org.apache.http.impl.client.CloseableHttpClient
 import org.apache.http.impl.client.HttpClientBuilder
 
-@Embarcated
 class ApacheHttpClient() : HttpClient<HttpGet, HttpResponse, CloseableHttpClient> {
 
     private var client: CloseableHttpClient = HttpClientBuilder.create().build()
